@@ -32,6 +32,24 @@ $(document).ready(function () {
     $(".modal_login").removeClass("active");
   });
 
+  $(".cart_block_main_content_item_right_quantity_plus").click(function() {
+    var defaultValue = $(this).parent().find("span").html();
+    defaultValue = parseInt(defaultValue);
+    defaultValue += 1;
+    $(this).parent().find("span").html(defaultValue)
+  });
+
+  $(".cart_block_main_content_item_right_quantity_minus").click(function() {
+    var defaultValue = $(this).parent().find("span").html();
+    defaultValue = parseInt(defaultValue);
+    defaultValue -= 1;
+    if(defaultValue == 0) {
+      $(this).parent().find("span").html('1');
+    } else {
+      $(this).parent().find("span").html(defaultValue);
+    }
+  });
+
   $('.home_content_block_slider').slick({
       centerMode: true,
       centerPadding: '0px',

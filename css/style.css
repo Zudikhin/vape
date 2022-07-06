@@ -1860,7 +1860,16 @@ input:focus {
   background: rgba(84, 84, 84, 0.24);
 }
 .cart_block_main_content_item_right_quantity_result {
-  margin: 0px 16px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .cart_block_main_content_item_right_quantity_result span {
   font-family: "Montserrat", sans-serif;
@@ -4593,12 +4602,29 @@ input:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid rgba(197, 197, 197, 0.2);
   width: 40px;
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
+  position: relative;
+  background: #1B142B;
+}
+.footer_under ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: rgba(197, 197, 197, 0.2);
+}
+.footer_under ul li a:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(#3A4F8E), to(#A36F96));
+  background: linear-gradient(to right, #3A4F8E, #A36F96);
 }
 .footer_under_politic {
   margin-top: 24px;
