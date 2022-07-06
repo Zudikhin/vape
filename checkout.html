@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+  
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a href="#" class="header_block_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <ul class="header_block_nav">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">КАТАЛОГ ТОВАРОВ</a>
+            </li>
+            <li>
+              <a href="#">О КОМПАНИИ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТы</a>
+            </li>
+          </ul>
+          <div class="header_block_content">
+            <div class="header_block_content_search">
+              <div class="header_block_content_search_btn">
+                <p>Поиск</p>
+                <img src="img/header/search.svg" alt="">
+              </div>
+              <div class="header_block_content_search_form">
+                <form action="">
+                  <input type="text" placeholder="Поиск...">
+                </form>
+                <button class="header_block_content_search_form_close">
+                  <img src="img/header/remove.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="header_block_content_login">
+              <p>Login</p>
+              <img src="img/header/login.svg" alt="">
+            </div>
+            <a class="header_block_content_cart" href="#">
+              <p>790,00 ₽</p>
+              <div class="header_block_content_cart_img">
+                <img src="img/header/cart.svg" alt="">
+                <div class="header_block_content_cart_img_count">
+                  <span>12</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="checkout">
+      <div class="container">
+        <div class="checkout_block">
+
+          <div class="checkout_block_left">
+            <h3 class="checkout_block_left_title_delivery">Доставка</h3>
+
+            <label for="">
+              <span>Страна доставки*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Город доставки*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Способ доставки*</span>
+              <select name="" id="">
+                <option value="">Доставка курьером</option>
+                <option value="">Самовывоз</option>
+              </select>
+              <p>Для выбранного способа доставки мы свяжемся с вами по телефону</p>
+            </label>
+
+            <label for="">
+              <span>Способ оплаты*</span>
+              <select name="" id="">
+                <option value="">Наличными</option>
+                <option value="">Картой</option>
+              </select>
+            </label>
+
+            <label for="" class="full">
+              <span>Улица*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Дом / корпус*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Квартира*</span>
+              <input type="text">
+            </label>
+
+            <h3 class="checkout_block_left_title_data">Ваши данные</h3>
+
+            <label for="">
+              <span>Имя*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Фамилия*</span>
+              <input type="text">
+            </label>
+
+            <label for="">
+              <span>Контактный телефон*</span>
+              <input type="tel">
+            </label>
+
+            <label for="">
+              <span>Электронная почта</span>
+              <input type="email">
+            </label>
+
+            <div class="checkout_block_left_rem_inner">
+              <label for="" class="checkout_block_left_rem">
+                Запомнить данные для будущих покупок
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <a class="checkout_block_left_button" href="#">
+              Оформить заказ
+            </a>
+
+          </div>
+
+          <div class="checkout_block_right">
+
+            <div class="checkout_block_right_item">
+              <span class="bold">Товары, 3 шт.</span>
+              <span class="thin">4 000 ₽</span>
+            </div>
+
+            <div class="checkout_block_right_item">
+              <span class="thin">Скидка</span>
+              <span class="thin">0 ₽</span>
+            </div>
+
+            <div class="checkout_block_right_item">
+              <span class="thin">Доставка</span>
+              <span class="thin">490 ₽</span>
+            </div>
+
+            <div class="checkout_block_right_item">
+              <span class="bold">Доставка</span>
+              <span class="red">Курьером</span>
+            </div>
+            
+            <p class="checkout_block_right_address">Москва, ул. Семёновский проезд, дом 3, квартира 13</p>
+
+            <div class="checkout_block_right_item">
+              <span class="bold">Дата:</span>
+              <span class="red">10-12 апреля</span>
+            </div>
+
+            <div class="checkout_block_right_item">
+              <span class="bold">Оплата:</span>
+              <span class="red">Наличными</span>
+            </div>
+
+            <p class="checkout_block_right_quantity">В вашей корзине 4 товара</p>
+
+            <p class="checkout_block_right_price">Итого с доставки: 6 120 ₽</p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="modal_back"></div>
+
+    <div class="modal_login">
+      <h3>Вход</h3>
+      <p class="modal_login_text">Заполните форму для входа в личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <button type="submit">Войти</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас нет аккаунта? <span class="modal_login_footer_btn">Регистрация</span></p>
+      </div>
+    </div>
+
+    <div class="modal_registration">
+      <h3>Cоздать аккаунт</h3>
+      <p class="modal_login_text">Создайте личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <label for="">
+          <span>Код подтверждения</span>
+          <input type="text">
+        </label>
+
+        <label for="" class="modal_registration_accept">
+          я согласен с условиями <a href="#">пользовательского соглашения</a>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас есть аккаунт? <span class="modal_registration_footer_btn">Вход</span></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+
+          <div class="footer_block_form">
+            <div class="footer_block_form_text">
+              <h2>Есть вопросы?</h2>
+              <p>Заполните форму и наши менеджеры свяжутся с вами</p>
+            </div>
+            <div class="footer_block_form_content">
+              <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон">
+                <button type="submit">Заполнить форму</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer_block_nav">
+            <div class="footer_block_nav_links">
+              <div class="footer_block_nav_links_item">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                  <li>
+                    <a href="#">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#">КАТАЛОГ ТОВАРОВ</a>
+                  </li>
+                  <li>
+                    <a href="#">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>ИНФОРМАЦИЯ</h3>
+                <ul>
+                  <li>
+                    <a href="#">О НАС</a>
+                  </li>
+                  <li>
+                    <a href="#">ОПЛАТА И ДОСТАВКА</a>
+                  </li>
+                  <li>
+                    <a href="#">МАГАЗИНЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>СОТРУДНИЧЕСТВО</h3>
+                <ul>
+                  <li>
+                    <a href="#">Франшиза</a>
+                  </li>
+                  <li>
+                    <a href="#">Опт</a>
+                  </li>
+                  <li>
+                    <a href="#">Поставщикам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item footer_block_nav_links_item_social">
+                <h3>Контакты</h3>
+                <ul>
+                  <li>
+                    <a href="tel:+123(4567)890">
+                      <img src="img/footer/telephone.svg" alt="">
+                      +123 (4567) 890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@blox.com">
+                      <img src="img/footer/email.svg" alt="">
+                      info@blox.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_block_nav_social">
+              <h3>Контакты</h3>
+              <ul>
+                <li>
+                  <a href="tel:+123(4567)890">
+                    <img src="img/footer/telephone.svg" alt="">
+                    +123 (4567) 890
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@blox.com">
+                    <img src="img/footer/email.svg" alt="">
+                    info@blox.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer_under">
+          <div class="footer_under_copyright">
+            <img src="img/footer/copyright.svg" alt="">
+            <p>2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer/insta.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/twitter.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/linkedin.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/youtube.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer_under_politic">
+            <a href="#">Полититика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(".checkout select").niceSelect();
+    </script>
+    
+  </body>
+</html>

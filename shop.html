@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+  
+    <header class="header header_home">
+      <div class="container">
+        <div class="header_block">
+          <a href="#" class="header_block_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <ul class="header_block_nav">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">КАТАЛОГ ТОВАРОВ</a>
+            </li>
+            <li>
+              <a href="#">О КОМПАНИИ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТы</a>
+            </li>
+          </ul>
+          <div class="header_block_content">
+            <div class="header_block_content_search">
+              <div class="header_block_content_search_btn">
+                <p>Поиск</p>
+                <img src="img/header/search.svg" alt="">
+              </div>
+              <div class="header_block_content_search_form">
+                <form action="">
+                  <input type="text" placeholder="Поиск...">
+                </form>
+                <button class="header_block_content_search_form_close">
+                  <img src="img/header/remove.svg" alt="">
+                </button>
+              </div>
+            </div> 
+            <div class="header_block_content_login">
+              <p>Login</p>
+              <img src="img/header/login.svg" alt="">
+            </div>
+            <a class="header_block_content_cart" href="#">
+              <p>790,00 ₽</p>
+              <div class="header_block_content_cart_img">
+                <img src="img/header/cart.svg" alt="">
+                <div class="header_block_content_cart_img_count">
+                  <span>12</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main_slider">
+      <div class="container">
+        <div class="main_slider_block">
+          <div class="main_slider_block_slider">
+            <div class="main_slider_block_slider_item">
+              <div class="main_slider_block_slider_item_text">
+                <h3>Розничная сеть вейп-шопов</h3>
+                <p>Сеть вейп-шопов — магазинов по продаже 
+                  электронных сигарет, жидкостей к ним
+                  и аксессуаров. В будущем планируется
+                  наличие кальянной продукции</p>
+              </div>
+              <div class="main_slider_block_slider_item_img">
+                <img src="img/home/main.png" alt="">
+              </div>
+            </div>
+
+            <div class="main_slider_block_slider_item">
+              <div class="main_slider_block_slider_item_text">
+                <h3>Розничная сеть вейп-шопов 1</h3>
+                <p>Сеть вейп-шопов — магазинов по продаже 
+                  электронных сигарет, жидкостей к ним
+                  и аксессуаров. В будущем планируется
+                  наличие кальянной продукции</p>
+              </div>
+              <div class="main_slider_block_slider_item_img">
+                <img src="img/home/main.png" alt="">
+              </div>
+            </div>
+
+            <div class="main_slider_block_slider_item">
+              <div class="main_slider_block_slider_item_text">
+                <h3>Розничная сеть вейп-шопов 2</h3>
+                <p>Сеть вейп-шопов — магазинов по продаже 
+                  электронных сигарет, жидкостей к ним
+                  и аксессуаров. В будущем планируется
+                  наличие кальянной продукции</p>
+              </div>
+              <div class="main_slider_block_slider_item_img">
+                <img src="img/home/main.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main_slider_block_inner">
+            <span class="main_slider_block_inner_now">01</span>
+            <div class="main_slider_block_progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <span class="slider__label sr-only">
+            </div>
+            <span class="main_slider_block_inner_all">03</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop_block">
+
+          <div class="shop_block_modal">
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Тип</p>
+              <select name="" id="">
+                <option value="">POD-СИСТЕМЫ</option>
+                <option value="">POD-СИСТЕМЫ1</option>
+                <option value="">POD-СИСТЕМЫ2</option>
+                <option value="">POD-СИСТЕМЫ3</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_range">
+              <p>Цена (руб.)</p>
+              <div class="shop_block_modal_range_numbers">
+                <div class="shop_block_modal_range_numbers_from">
+                  <span>от</span>
+                  <span class="shop_block_modal_range_numbers_from_numeric">0.00</span>
+                </div>
+                <div class="shop_block_modal_range_numbers_to">
+                  <span>до</span>
+                  <span class="shop_block_modal_range_numbers_to_numeric">5120.00</span>
+                </div>
+              </div>
+              <div id="mobile_range" class="slider_range"></div>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Вкус</p>
+              <select name="" id="">
+                <option value="">Лед</option>
+                <option value="">Абрикос</option>
+                <option value="">Абрикос</option>
+                <option value="">Ананас</option>
+                <option value="">Апельсин</option>
+                <option value="">Арбуз</option>
+                <option value="">Лимон</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Количество затяжек</p>
+              <select name="" id="">
+                <option value="">800</option>
+                <option value="">900</option>
+                <option value="">1000</option>
+                <option value="">1100</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Бренд</p>
+              <select name="" id="">
+                <option value="">Sneakers</option>
+                <option value="">Sneakers1</option>
+                <option value="">Sneakers2</option>
+                <option value="">Sneakers3</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Объем бака</p>
+              <select name="" id="">
+                <option value="">3мл</option>
+                <option value="">4мл</option>
+                <option value="">5мл</option>
+                <option value="">6мл</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Аккумулятор</p>
+              <select name="" id="">
+                <option value="">350 mAh</option>
+                <option value="">450 mAh</option>
+                <option value="">550 mAh</option>
+                <option value="">650 mAh</option>
+              </select>
+            </div>
+
+            <div class="shop_block_modal_item">
+              <p class="shop_block_modal_item_title">Режимы работы</p>
+              <select name="" id="">
+                <option value="">VV</option>
+                <option value="">VV1</option>
+                <option value="">VV2</option>
+                <option value="">VV3</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="shop_block_title">
+            <h2>Каталог товаров</h2>
+            <div class="shop_block_title_btn">
+              <img src="img/shop/filter.svg" alt="">
+            </div>
+          </div>
+          <div class="shop_block_main">
+
+            <div class="shop_block_main_sidebar">
+              
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Тип</p>
+                <select name="" id="">
+                  <option value="">POD-СИСТЕМЫ</option>
+                  <option value="">POD-СИСТЕМЫ1</option>
+                  <option value="">POD-СИСТЕМЫ2</option>
+                  <option value="">POD-СИСТЕМЫ3</option>
+                </select>
+              </div>
+
+              <div class="shop_block_main_sidebar_range">
+                <p>Цена (руб.)</p>
+                <div class="shop_block_main_sidebar_range_numbers">
+                  <div class="shop_block_main_sidebar_range_numbers_from">
+                    <span>от</span>
+                    <span class="shop_block_main_sidebar_range_numbers_from_numeric">0.00</span>
+                  </div>
+                  <div class="shop_block_main_sidebar_range_numbers_to">
+                    <span>до</span>
+                    <span class="shop_block_main_sidebar_range_numbers_to_numeric">5120.00</span>
+                  </div>
+                </div>
+                <div id="desktop_range" class="slider_range"></div>
+              </div>
+
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Вкус</p>
+                <select name="" id="">
+                  <option value="">Лед</option>
+                  <option value="">Абрикос</option>
+                  <option value="">Абрикос</option>
+                  <option value="">Ананас</option>
+                  <option value="">Апельсин</option>
+                  <option value="">Арбуз</option>
+                  <option value="">Лимон</option>
+                </select>
+              </div>
+  
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Количество затяжек</p>
+                <select name="" id="">
+                  <option value="">800</option>
+                  <option value="">900</option>
+                  <option value="">1000</option>
+                  <option value="">1100</option>
+                </select>
+              </div>
+  
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Бренд</p>
+                <select name="" id="">
+                  <option value="">Sneakers</option>
+                  <option value="">Sneakers1</option>
+                  <option value="">Sneakers2</option>
+                  <option value="">Sneakers3</option>
+                </select>
+              </div>
+  
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Объем бака</p>
+                <select name="" id="">
+                  <option value="">3мл</option>
+                  <option value="">4мл</option>
+                  <option value="">5мл</option>
+                  <option value="">6мл</option>
+                </select>
+              </div>
+  
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Аккумулятор</p>
+                <select name="" id="">
+                  <option value="">350 mAh</option>
+                  <option value="">450 mAh</option>
+                  <option value="">550 mAh</option>
+                  <option value="">650 mAh</option>
+                </select>
+              </div>
+  
+              <div class="shop_block_main_sidebar_item">
+                <p class="shop_block_main_sidebar_item_title">Режимы работы</p>
+                <select name="" id="">
+                  <option value="">VV</option>
+                  <option value="">VV1</option>
+                  <option value="">VV2</option>
+                  <option value="">VV3</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="shop_block_main_list">
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/1.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>Carst Sneaker</h5>
+                <p class="shop_block_main_list_item_under">Obermaterial aus Rindsveloursleder Gummisohle</p>
+                <span class="shop_block_main_list_item_price">4 100,00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/2.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>FIT your taste</h5>
+                <p class="shop_block_main_list_item_under">Obermaterial aus Rindsveloursleder Gummisohle</p>
+                <span class="shop_block_main_list_item_price">4 100,00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/3.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>FIT your taste</h5>
+                <p class="shop_block_main_list_item_under">Obermaterial aus Rindsveloursleder Gummisohle</p>
+                <span class="shop_block_main_list_item_price">1 500.00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/4.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>Vaporesso Zero</h5>
+                <p class="shop_block_main_list_item_under">2 Pod Kit</p>
+                <span class="shop_block_main_list_item_price">2 570,00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/5.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>Joyetech eGo</h5>
+                <p class="shop_block_main_list_item_under">AST Pod Kit</p>
+                <span class="shop_block_main_list_item_price">1 530.00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/5.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>Joyetech eGo</h5>
+                <p class="shop_block_main_list_item_under">AST Pod Kit</p>
+                <span class="shop_block_main_list_item_price">1 530.00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+              <div class="shop_block_main_list_item">
+                <div class="shop_block_main_list_item_img">
+                  <img class="shop_block_main_list_item_img_main" src="img/shop/6.png" alt="">
+                  <img class="shop_block_main_list_item_img_circle" src="img/product/feature.png" alt="">
+                </div>
+                <h5>Joyetech Obliq</h5>
+                <p class="shop_block_main_list_item_under">Pod Kit</p>
+                <span class="shop_block_main_list_item_price">4 500.00 ₽</span>
+                <a href="#">
+                  <span>Подробнее</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accessories">
+      <div class="container">
+        <div class="accessories_block">
+          <h3>Комплектующие</h3>
+          <p>With exotic appearance and exquisite structure, the idea of UFORCE T2 comes from the mechanical design of the TRANSFORMER. It is equipped with N2, the new dual mesh coils, for an even heating and strong acceleration power.</p>
+          <a href="#">Каталог</a>
+          <img src="img/accessories/image.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <div class="modal_back"></div>
+
+    <div class="modal_login">
+      <h3>Вход</h3>
+      <p class="modal_login_text">Заполните форму для входа в личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <button type="submit">Войти</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас нет аккаунта? <span class="modal_login_footer_btn">Регистрация</span></p>
+      </div>
+    </div>
+
+    <div class="modal_registration">
+      <h3>Cоздать аккаунт</h3>
+      <p class="modal_login_text">Создайте личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <label for="">
+          <span>Код подтверждения</span>
+          <input type="text">
+        </label>
+
+        <label for="" class="modal_registration_accept">
+          я согласен с условиями <a href="#">пользовательского соглашения</a>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас есть аккаунт? <span class="modal_registration_footer_btn">Вход</span></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+
+          <div class="footer_block_form">
+            <div class="footer_block_form_text">
+              <h2>Есть вопросы?</h2>
+              <p>Заполните форму и наши менеджеры свяжутся с вами</p>
+            </div>
+            <div class="footer_block_form_content">
+              <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон">
+                <button type="submit">Заполнить форму</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer_block_nav">
+            <div class="footer_block_nav_links">
+              <div class="footer_block_nav_links_item">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                  <li>
+                    <a href="#">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#">КАТАЛОГ ТОВАРОВ</a>
+                  </li>
+                  <li>
+                    <a href="#">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>ИНФОРМАЦИЯ</h3>
+                <ul>
+                  <li>
+                    <a href="#">О НАС</a>
+                  </li>
+                  <li>
+                    <a href="#">ОПЛАТА И ДОСТАВКА</a>
+                  </li>
+                  <li>
+                    <a href="#">МАГАЗИНЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>СОТРУДНИЧЕСТВО</h3>
+                <ul>
+                  <li>
+                    <a href="#">Франшиза</a>
+                  </li>
+                  <li>
+                    <a href="#">Опт</a>
+                  </li>
+                  <li>
+                    <a href="#">Поставщикам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item footer_block_nav_links_item_social">
+                <h3>Контакты</h3>
+                <ul>
+                  <li>
+                    <a href="tel:+123(4567)890">
+                      <img src="img/footer/telephone.svg" alt="">
+                      +123 (4567) 890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@blox.com">
+                      <img src="img/footer/email.svg" alt="">
+                      info@blox.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_block_nav_social">
+              <h3>Контакты</h3>
+              <ul>
+                <li>
+                  <a href="tel:+123(4567)890">
+                    <img src="img/footer/telephone.svg" alt="">
+                    +123 (4567) 890
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@blox.com">
+                    <img src="img/footer/email.svg" alt="">
+                    info@blox.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer_under">
+          <div class="footer_under_copyright">
+            <img src="img/footer/copyright.svg" alt="">
+            <p>2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer/insta.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/twitter.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/linkedin.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/youtube.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer_under_politic">
+            <a href="#">Полититика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+      $('.shop_block_main_sidebar_item select').niceSelect();
+
+      $('.shop_block_modal_item select').niceSelect();
+
+      singleDesktop = document.getElementById('desktop_range')
+
+      noUiSlider.create(singleDesktop, {
+          start: [0, 5120],
+          connect: true,
+          range: {
+              'min': 0,
+              'max': 5120
+          }
+      });
+
+      singleDesktop.noUiSlider.on("update", function (values, handle) {
+        let slider_values = singleDesktop.noUiSlider.get();
+        $(".shop_block_main_sidebar_range_numbers_from_numeric").html(parseInt(slider_values[0]));
+        $(".shop_block_main_sidebar_range_numbers_to_numeric").html(parseInt(slider_values[1]));
+      });
+
+      // mobile
+
+      singleMob = document.getElementById('mobile_range')
+
+      noUiSlider.create(singleMob, {
+          start: [0, 5120],
+          connect: true,
+          range: {
+              'min': 0,
+              'max': 5120
+          }
+      });
+
+      singleMob.noUiSlider.on("update", function (values, handle) {
+        let slider_values = singleMob.noUiSlider.get();
+        $(".shop_block_modal_range_numbers_from_numeric").html(parseInt(slider_values[0]));
+        $(".shop_block_modal_range_numbers_to_numeric").html(parseInt(slider_values[1]));
+      });
+
+    </script>
+
+  </body>
+</html>

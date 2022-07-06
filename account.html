@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+  
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a href="#" class="header_block_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <ul class="header_block_nav">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">КАТАЛОГ ТОВАРОВ</a>
+            </li>
+            <li>
+              <a href="#">О КОМПАНИИ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТы</a>
+            </li>
+          </ul>
+          <div class="header_block_content">
+            <div class="header_block_content_search">
+              <div class="header_block_content_search_btn">
+                <p>Поиск</p>
+                <img src="img/header/search.svg" alt="">
+              </div>
+              <div class="header_block_content_search_form">
+                <form action="">
+                  <input type="text" placeholder="Поиск...">
+                </form>
+                <button class="header_block_content_search_form_close">
+                  <img src="img/header/remove.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="header_block_content_login">
+              <p>Login</p>
+              <img src="img/header/login.svg" alt="">
+            </div>
+            <a class="header_block_content_cart" href="#">
+              <p>790,00 ₽</p>
+              <div class="header_block_content_cart_img">
+                <img src="img/header/cart.svg" alt="">
+                <div class="header_block_content_cart_img_count">
+                  <span>12</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="account">
+      <div class="container">
+        <div class="account_block">
+          <div class="account_block_left">
+            <h4>Заказы</h4>
+            <div class="account_block_left_filter">
+
+              <a class="canceled" href="#">
+                <div class="circle"></div>
+                Отменено
+              </a>
+
+              <a class="received" href="#">
+                <div class="circle"></div>
+                Получено
+              </a>
+
+              <a class="way" href="#">
+                <div class="circle"></div>
+                В пути
+              </a>
+
+            </div>
+            <div class="account_block_left_content">
+
+              <div class="account_block_left_content_item way">
+                <div class="account_block_left_content_item_left">
+                  <div class="account_block_left_content_item_left_img">
+                    <img src="img/product/1.png" alt="">
+                  </div>
+                  <div class="account_block_left_content_item_left_info">
+                    <div class="account_block_left_content_item_left_info_top">
+                      <h3>Заказ <span>№11459</span> от 11 апреля</h3>
+                    </div>
+                    <div class="account_block_left_content_item_left_info_bottom">
+                      <p>Blue sneakers</p>
+                      <span>Sneakers</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="account_block_left_content_item_right">
+                  <span class="account_block_left_content_item_right_price">1 530.00 ₽</span>
+                  <span class="account_block_left_content_item_right_pay">Оплачено</span>
+                  <div class="account_block_left_content_item_right_status">
+                    <div class="account_block_left_content_item_right_status_circle"></div>
+                    <span>В пути</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="account_block_left_content_item received">
+                <div class="account_block_left_content_item_left">
+                  <div class="account_block_left_content_item_left_img">
+                    <img src="img/product/1.png" alt="">
+                  </div>
+                  <div class="account_block_left_content_item_left_info">
+                    <div class="account_block_left_content_item_left_info_top">
+                      <h3>Заказ <span>№11459</span> от 11 апреля</h3>
+                    </div>
+                    <div class="account_block_left_content_item_left_info_bottom">
+                      <p>Blue sneakers</p>
+                      <span>Sneakers</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="account_block_left_content_item_right">
+                  <span class="account_block_left_content_item_right_price">1 530.00 ₽</span>
+                  <span class="account_block_left_content_item_right_pay">Оплачено</span>
+                  <div class="account_block_left_content_item_right_status">
+                    <div class="account_block_left_content_item_right_status_circle"></div>
+                    <span>Получено</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="account_block_left_content_item canceled">
+                <div class="account_block_left_content_item_left">
+                  <div class="account_block_left_content_item_left_img">
+                    <img src="img/product/1.png" alt="">
+                  </div>
+                  <div class="account_block_left_content_item_left_info">
+                    <div class="account_block_left_content_item_left_info_top">
+                      <h3>Заказ <span>№11459</span> от 11 апреля</h3>
+                    </div>
+                    <div class="account_block_left_content_item_left_info_bottom">
+                      <p>Blue sneakers</p>
+                      <span>Sneakers</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="account_block_left_content_item_right">
+                  <span class="account_block_left_content_item_right_price">1 530.00 ₽</span>
+                  <span class="account_block_left_content_item_right_pay">Оплачено</span>
+                  <div class="account_block_left_content_item_right_status">
+                    <div class="account_block_left_content_item_right_status_circle"></div>
+                    <span>Отменено</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="account_block_left_show">Посмотреть все заказы</button>
+          </div>
+          <div class="account_block_right">
+            <h3>Мои данные</h3>
+            <h5>Александр Константинопольский</h5>
+            <div class="account_block_right_data">
+              <div class="account_block_right_data_item">
+                <span>Телефон:</span>
+                <a href="tel:+7(983)878-34-21">+7 (983) 878-34-21</a>
+              </div>
+              <div class="account_block_right_data_item">
+                <span>E-mail:</span>
+                <a href="mailto:alexkonst87@randommail.ru">alexkonst87@randommail.ru</a>
+              </div>
+            </div>
+            <h6>Адреса доставки:</h6>
+            <ul class="account_block_right_addresses">
+              <li>
+                <span>1</span>
+                <p>г. Москва, ул. Копыткина, д.82, кв. 30</p>
+              </li>
+              <li>
+                <span>2</span>
+                <p>г. Москва, ул. Копыткина, д.82, кв. 30</p>
+              </li>
+            </ul>
+            <h6>Привязанные карты:</h6>
+            <ul class="account_block_right_cards">
+              <li>
+                <span>Visa</span>
+                <p>•••• •••• •••• 5251</p>
+              </li>
+              <li>
+                <span>Tinkoff</span>
+                <p>•••• •••• •••• 2367</p>
+              </li>
+            </ul>
+            <div class="account_block_right_links">
+              <a href="#">Изменить данные</a>
+              <a href="#">Изменить пароль</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal_back"></div>
+
+    <div class="modal_login">
+      <h3>Вход</h3>
+      <p class="modal_login_text">Заполните форму для входа в личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <button type="submit">Войти</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас нет аккаунта? <span class="modal_login_footer_btn">Регистрация</span></p>
+      </div>
+    </div>
+
+    <div class="modal_registration">
+      <h3>Cоздать аккаунт</h3>
+      <p class="modal_login_text">Создайте личный кабинет</p>
+      <form action="">
+
+        <label for="">
+          <span>Номер телефона</span>
+          <input type="tel" placeholder="+7 (000) 000-00-00">
+        </label>
+
+        <label for="">
+          <div class="top">
+            <span>Пароль</span>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <input type="password">
+        </label>
+
+        <label for="">
+          <span>Код подтверждения</span>
+          <input type="text">
+        </label>
+
+        <label for="" class="modal_registration_accept">
+          я согласен с условиями <a href="#">пользовательского соглашения</a>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+
+      </form>
+      <div class="modal_login_footer">
+        <p>У вас есть аккаунт? <span class="modal_registration_footer_btn">Вход</span></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+
+          <div class="footer_block_form">
+            <div class="footer_block_form_text">
+              <h2>Есть вопросы?</h2>
+              <p>Заполните форму и наши менеджеры свяжутся с вами</p>
+            </div>
+            <div class="footer_block_form_content">
+              <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон">
+                <button type="submit">Заполнить форму</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer_block_nav">
+            <div class="footer_block_nav_links">
+              <div class="footer_block_nav_links_item">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                  <li>
+                    <a href="#">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#">КАТАЛОГ ТОВАРОВ</a>
+                  </li>
+                  <li>
+                    <a href="#">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>ИНФОРМАЦИЯ</h3>
+                <ul>
+                  <li>
+                    <a href="#">О НАС</a>
+                  </li>
+                  <li>
+                    <a href="#">ОПЛАТА И ДОСТАВКА</a>
+                  </li>
+                  <li>
+                    <a href="#">МАГАЗИНЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item">
+                <h3>СОТРУДНИЧЕСТВО</h3>
+                <ul>
+                  <li>
+                    <a href="#">Франшиза</a>
+                  </li>
+                  <li>
+                    <a href="#">Опт</a>
+                  </li>
+                  <li>
+                    <a href="#">Поставщикам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_block_nav_links_item footer_block_nav_links_item_social">
+                <h3>Контакты</h3>
+                <ul>
+                  <li>
+                    <a href="tel:+123(4567)890">
+                      <img src="img/footer/telephone.svg" alt="">
+                      +123 (4567) 890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@blox.com">
+                      <img src="img/footer/email.svg" alt="">
+                      info@blox.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_block_nav_social">
+              <h3>Контакты</h3>
+              <ul>
+                <li>
+                  <a href="tel:+123(4567)890">
+                    <img src="img/footer/telephone.svg" alt="">
+                    +123 (4567) 890
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@blox.com">
+                    <img src="img/footer/email.svg" alt="">
+                    info@blox.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer_under">
+          <div class="footer_under_copyright">
+            <img src="img/footer/copyright.svg" alt="">
+            <p>2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer/insta.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/twitter.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/linkedin.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/youtube.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="footer_under_politic">
+            <a href="#">Полититика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
